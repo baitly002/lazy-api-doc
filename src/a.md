@@ -130,4 +130,4 @@ remark | 否 | 备注 |  | 说明
 example | 否 | 示例 |  | 
 defaultValue | 否 | 默认值 |  | 
 required | 否 | 是否必须 | false |
-ignore | 否 | 是否忽略 | false |
+ignore | 否 | 是否忽略 | false | 
