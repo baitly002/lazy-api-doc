@@ -13,4 +13,5 @@ public class ApiConfig {
             + "{\"className\":\"org.springframework.web.multipart.MultipartFile\", \"params\":[{\"chineseName\":\"文件\",\"format\":\"\",\"name\":\"file\",\"remark\":\"\",\"require\":\"1\",\"type\":\"file\",\"status\":\"1\"}]}]";
     public static int maxlevel = 3;
     public static boolean createFinalField = false;
+    public static boolean createFieldRemark = false;//是否对含有子属性的字段生成系统相关的说明
 }

@@ -201,6 +201,7 @@ public class SendApiDoc {
             if(StringUtils.isBlank(params)) {
                 params = new JSONArray().toJSONString();
             }
+
             Map<String, String> requestParams = new HashMap<>();
             requestParams.put("userId", "59883a21d8941f64336acde9");
             requestParams.put("title", title);
@@ -215,6 +216,7 @@ public class SendApiDoc {
             requestParams.put("className", classDoc.getClassName());
             requestParams.put("methodName", methodDoc.getMethodName());
             requestParams.put("methodInfo", methodDoc.getMethodInfo());
+            requestParams.put("privateStatus", methodDoc.isPrivateStatus()?"1":"0");
 
             String result = HttpRequest.sendPost(ApiConfig.host+"/apiManager/testapi/", requestParams);
             logger.info("添加到接口的结果是:"+result);

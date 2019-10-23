@@ -86,6 +86,11 @@ public class MethodDoc implements Serializable{
 	private RequestMappingBean requestMappingBean;
 
 	private ReturnFilter returnFilter;
+
+	/**
+	 * 是否私有
+	 */
+	private boolean privateStatus;
 	
 	public String getMethodName() {
 		return methodName;
@@ -216,6 +221,14 @@ public class MethodDoc implements Serializable{
 
 	public void setUnRequireParameters(String[] unRequireParameters) {
 		this.unRequireParameters = unRequireParameters;
+	}
+
+	public boolean isPrivateStatus() {
+		return privateStatus;
+	}
+
+	public void setPrivateStatus(boolean privateStatus) {
+		this.privateStatus = privateStatus;
 	}
 	//	public void addDoc(Doc doc) {
 //		if(this.docs==null) {

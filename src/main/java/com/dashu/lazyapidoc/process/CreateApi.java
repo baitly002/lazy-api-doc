@@ -101,6 +101,7 @@ public class CreateApi {
                                 methodDoc.setReturnFilter(returnFilter);
                             }
                             methodDoc.setScope(true);//默认作用全部范围参数
+                            methodDoc.setPrivateStatus(false);//默认方法（接口）开放
                             String[] requireParameters = {};
                             String[] unRequireParameters = {};
                             String[] ignoreParameters = {};
@@ -280,6 +281,16 @@ public class CreateApi {
                                         if(!doc.ignore() && doc.required()) {
                                             requireParameters = DocArrayUtils.add(requireParameters, doc.name());
                                         }
+                                    }
+                                }
+                            }
+
+                            //只有接口上有一个设置为私有的，则为私有接口
+                            for(Doc doc : docs) {
+                                if(StringUtils.isBlank(doc.name())){
+                                    if(doc.privateStatus()){
+                                        methodDoc.setPrivateStatus(true);
+                                        break;
                                     }
                                 }
                             }

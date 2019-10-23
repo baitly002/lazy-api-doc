@@ -69,4 +69,10 @@ public @interface Doc {
 	 * 					false:仅仅方法上的doc注解
 	 */
 	boolean scope() default true;
+
+	/**
+	 * 是否私有，作用在接口方法或类上，属性无效
+	 * @return
+	 */
+	boolean privateStatus() default false;
 }

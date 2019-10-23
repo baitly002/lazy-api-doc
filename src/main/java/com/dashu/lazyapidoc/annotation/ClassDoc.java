@@ -20,6 +20,8 @@ public class ClassDoc implements Serializable{
 	private String path;
 	private List<MethodDoc> methodDocList;
 	private Map<String, Object> genericParamterMapping;
+	private boolean privateStatus;
+
 	public String getClassName() {
 		return className;
 	}
@@ -55,5 +57,13 @@ public class ClassDoc implements Serializable{
 	}
 	public void setGenericParamterMapping(Map<String, Object> genericParamterMapping) {
 		this.genericParamterMapping = genericParamterMapping;
+	}
+
+	public boolean isPrivateStatus() {
+		return privateStatus;
+	}
+
+	public void setPrivateStatus(boolean privateStatus) {
+		this.privateStatus = privateStatus;
 	}
 }

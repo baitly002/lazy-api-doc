@@ -160,7 +160,9 @@ public class BeanParser {
                         if (type instanceof ParameterizedType) {
                             if (doc != null) {
 //                            json.put(field.getName() + "_", doc.value() + ";备注：" + doc.remark());
-                                json.put(field.getName() + "_", parameterInfo);
+                                if(ApiConfig.createFieldRemark){
+                                    json.put(field.getName() + "_", parameterInfo);
+                                }
                             }
                             //最终泛型
                             type = forParameterizedType((ParameterizedType)type, paramMap);
@@ -169,7 +171,9 @@ public class BeanParser {
                             Type vt = paramMap.get(type.getTypeName());
                             if (doc != null) {
 //                            json.put(field.getName() + "_", doc.value() + ";备注：" + doc.remark());
-                                json.put(field.getName() + "_", parameterInfo);
+                                if(ApiConfig.createFieldRemark){
+                                    json.put(field.getName() + "_", parameterInfo);
+                                }
                             }
                             if(isPrimitive(vt.getTypeName()) || StringUtils.isNotBlank(TypeFormat.unifyType(vt.getTypeName()))){
 //                                parameterInfo.setType(vt.getTypeName());
