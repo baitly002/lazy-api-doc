@@ -114,6 +114,7 @@ excludes | 否 | 要排除的字段 |  | 字符串数组模式 与includes互斥
 maxLevel | 否 | 最大层级 | 0 | 
 type | 否 | 作用模式 | simple | simple:作用所有同名属性 <br> level:作用指定某层级下的属性
 sort | 否 | 排序 | true |  
+prefix | 否 | 前缀 |  | 对排除（包含）某属性，指定前缀,仅作用于type=level
 
 ------
 ------
