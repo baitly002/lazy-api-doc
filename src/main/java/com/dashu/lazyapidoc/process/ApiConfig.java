@@ -14,4 +14,5 @@ public class ApiConfig {
     public static int maxlevel = 3;
     public static boolean createFinalField = false;
     public static boolean createFieldRemark = false;//是否对含有子属性的字段生成系统相关的说明
+    public static String glabPrefix = "data";//全局过滤前缘， 不能为null
 }

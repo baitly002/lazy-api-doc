@@ -244,28 +244,63 @@ public class SendApiDoc {
         try {
             Object obj = JSON.parse(data);
             SerializeFilter serializeFilter = null;
+            String glabPrefix = ApiConfig.glabPrefix;
+            boolean notEmpty = StringUtils.isNotBlank(returnFilter.prefix());
+            String prefix = notEmpty ? glabPrefix + "." + returnFilter.prefix() : glabPrefix;
+            boolean prefixNotEmpty = StringUtils.isNotBlank(prefix);
             if("simple".equalsIgnoreCase(returnFilter.type())) {
                 SimplePropertyPreFilter filter = new SimplePropertyPreFilter();
                 String values = returnFilter.value();
                 for (String v : values.split(",")){
-                    filter.getExcludes().add(v.trim());
+                    if(prefixNotEmpty){
+                        filter.getExcludes().add(prefix+"."+v.trim());
+                    }else {
+                        filter.getExcludes().add(v.trim());
+                    }
                 }
                 for (String exclude : returnFilter.excludes()) {
-                    filter.getExcludes().add(exclude);
+                    if(prefixNotEmpty){
+                        filter.getExcludes().add(prefix+"."+exclude);
+                    }else{
+                        filter.getExcludes().add(exclude);
+                    }
+
                 }
                 for (String include : returnFilter.includes()) {
-                    filter.getIncludes().add(include);
+                    if(prefixNotEmpty){
+                        filter.getIncludes().add(prefix+"."+include);
+                    }else{
+                        filter.getIncludes().add(include);
+                    }
+
                 }
                 filter.setMaxLevel(returnFilter.maxLevel());
                 serializeFilter = filter;
             }else if("level".equalsIgnoreCase(returnFilter.type())){
                 LevelPropertyPreFilter levelPropertyPreFilter = new LevelPropertyPreFilter();
-                levelPropertyPreFilter.addExcludes(returnFilter.excludes());
-                levelPropertyPreFilter.addIncludes(returnFilter.includes());
+                if(prefixNotEmpty){
+                    String[] excludes = returnFilter.excludes();
+                    String[] includes = returnFilter.includes();
+                    for(String exclude : excludes){
+                        levelPropertyPreFilter.addExcludes(prefix+"."+exclude);
+                    }
+                    for(String include : includes){
+                        levelPropertyPreFilter.addIncludes(prefix+"."+include);
+                    }
+                }else{
+                    levelPropertyPreFilter.addExcludes(returnFilter.excludes());
+                    levelPropertyPreFilter.addIncludes(returnFilter.includes());
+                }
+
                 levelPropertyPreFilter.setMaxLevel(returnFilter.maxLevel());
                 String values = returnFilter.value();
                 for (String v : values.split(",")){
-                    levelPropertyPreFilter.getExcludes().add(v.trim());
+                    if(prefixNotEmpty){
+                        levelPropertyPreFilter.getExcludes().add(prefix+"."+v.trim());
+                    }else{
+                        levelPropertyPreFilter.getExcludes().add(v.trim());
+                    }
+
                 }
                 serializeFilter = levelPropertyPreFilter;
             }

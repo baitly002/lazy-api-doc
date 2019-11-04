@@ -47,4 +47,10 @@ public @interface ReturnFilter {
      * @return
      */
     boolean sort() default true;
+
+    /**
+     * 属性前缀
+     * @return
+     */
+    String prefix() default "";
 }
