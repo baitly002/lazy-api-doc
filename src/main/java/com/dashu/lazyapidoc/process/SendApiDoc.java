@@ -252,26 +252,26 @@ public class SendApiDoc {
                 SimplePropertyPreFilter filter = new SimplePropertyPreFilter();
                 String values = returnFilter.value();
                 for (String v : values.split(",")){
-                    if(prefixNotEmpty){
-                        filter.getExcludes().add(prefix+"."+v.trim());
-                    }else {
+//                    if(prefixNotEmpty){
+//                        filter.getExcludes().add(prefix+"."+v.trim());
+//                    }else {
                         filter.getExcludes().add(v.trim());
-                    }
+//                    }
                 }
                 for (String exclude : returnFilter.excludes()) {
-                    if(prefixNotEmpty){
-                        filter.getExcludes().add(prefix+"."+exclude);
-                    }else{
+//                    if(prefixNotEmpty){
+//                        filter.getExcludes().add(prefix+"."+exclude);
+//                    }else{
                         filter.getExcludes().add(exclude);
-                    }
+//                    }
 
                 }
                 for (String include : returnFilter.includes()) {
-                    if(prefixNotEmpty){
-                        filter.getIncludes().add(prefix+"."+include);
-                    }else{
+//                    if(prefixNotEmpty){
+//                        filter.getIncludes().add(prefix+"."+include);
+//                    }else{
                         filter.getIncludes().add(include);
-                    }
+//                    }
 
                 }
                 filter.setMaxLevel(returnFilter.maxLevel());
