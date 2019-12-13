@@ -75,4 +75,10 @@ public @interface Doc {
 	 * @return
 	 */
 	boolean privateStatus() default false;
+
+	/**
+	 * 对应的表字段 仅作用在表与实体类对应的基础上
+	 * @return
+	 */
+	String fieldTag() default "";
 }
