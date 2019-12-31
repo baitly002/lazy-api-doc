@@ -33,7 +33,7 @@
 
 ----
 
-### 用户功能介绍
+### 1.1用户功能介绍
 <p>&nbsp;</p>
 <p>safsdaf</p>
 <p>sadf</p>
@@ -51,8 +51,8 @@
 
 ----
 
+### 2.1添加地址
 
-### 添加地址
 #### 描述
 
 
@@ -223,8 +223,8 @@ public com.dashu.repair.core.model.Address com.dashu.repair.core.web.AddressCont
 
 ----
 
+### 2.2获取地址信息
 
-### 获取地址信息
 #### 描述
 
 
@@ -325,8 +325,8 @@ public com.dashu.repair.core.model.Address com.dashu.repair.core.web.AddressCont
 
 ----
 
+### 2.3修改地址信息
 
-### 修改地址信息
 #### 描述
 
 
@@ -391,8 +391,8 @@ public boolean com.dashu.repair.core.web.AddressController.update(com.dashu.base
 
 ----
 
+### 2.4删除地址
 
-### 删除地址
 #### 描述
 
 
@@ -435,8 +435,8 @@ public boolean com.dashu.repair.core.web.AddressController.delete(com.dashu.base
 
 ----
 
+### 2.5excel导出
 
-### excel导出
 #### 描述
 
 
@@ -494,8 +494,8 @@ public void com.dashu.repair.core.web.AddressController.exportExcel(com.dashu.ba
 
 ----
 
+### 2.6查询地址列表
 
-### 查询地址列表
 #### 描述
 
 
@@ -600,8 +600,8 @@ public com.dashu.base.common.model.PageList<com.dashu.repair.core.model.AddressD
 
 ----
 
+### 2.7excel导入
 
-### excel导入
 #### 描述
 
 
@@ -702,8 +702,8 @@ public java.util.List<com.dashu.repair.core.model.Address> com.dashu.repair.core
 
 ----
 
+### 2.8查询所有子地址列表
 
-### 查询所有子地址列表
 #### 描述
 
 
@@ -806,8 +806,8 @@ public java.util.List<com.dashu.repair.core.model.Address> com.dashu.repair.core
 
 ----
 
+### 2.9excel模板下载
 
-### excel模板下载
 #### 描述
 
 
@@ -841,8 +841,8 @@ public void com.dashu.repair.core.web.AddressController.download(com.dashu.base.
 
 ----
 
+### 2.10级联刷新地点详细地址
 
-### 级联刷新地点详细地址
 #### 描述
 
 
@@ -883,8 +883,8 @@ public boolean com.dashu.repair.core.web.AddressController.refreshAddress(com.da
 
 ----
 
+### 2.11.1获取监控设备总数
 
-### 获取监控设备总数
 #### 描述
 
 
@@ -923,8 +923,8 @@ public abstract java.lang.Integer com.wuanhj.web.service.CountService.getCountDe
 
 ----
 
+### 2.11.2获取已接入钢厂总数
 
-### 获取已接入钢厂总数
 #### 描述
 
 
@@ -963,8 +963,8 @@ public abstract java.lang.Integer com.wuanhj.web.service.CountService.getCountCo
 
 ----
 
+### 2.11.3获取监测数据
 
-### 获取监测数据
 #### 描述
 
 
@@ -1003,8 +1003,8 @@ public abstract java.lang.Integer com.wuanhj.web.service.CountService.getCountDa
 
 ----
 
+### 2.11.4获取城市节水节电除尘
 
-### 获取城市节水节电除尘
 #### 描述
 
 
@@ -1048,8 +1048,8 @@ public abstract com.wuanhj.web.dto.EconomizeCity com.wuanhj.web.service.CountSer
 
 ----
 
+### 2.12.1删除api权限
 
-### 删除api权限
 #### 描述
 
 
@@ -1089,8 +1089,8 @@ public abstract boolean org.basecode.web.sys.service.ApiPermissionService.delete
 
 ----
 
+### 2.12.2获取api权限列表
 
-### 获取api权限列表
 #### 描述
 
 
@@ -1153,8 +1153,8 @@ public abstract org.basecode.common.criterion.model.PageList<org.basecode.web.sy
 
 ----
 
+### 2.12.3获取api权限树
 
-### 获取api权限树
 #### 描述
 
 
@@ -1210,8 +1210,8 @@ public abstract java.util.List<org.basecode.web.sys.dto.ApiPermissionTree> org.b
 
 ----
 
+### 2.12.4保存或修改
 
-### 保存或修改
 #### 描述
 
 
@@ -1267,8 +1267,8 @@ public abstract boolean org.basecode.web.sys.service.ApiPermissionService.saveOr
 
 ----
 
+### 2.12.5修改api权限状态
 
-### 修改api权限状态
 #### 描述
 
 
@@ -1309,8 +1309,8 @@ public abstract boolean org.basecode.web.sys.service.ApiPermissionService.update
 
 ----
 
+### 2.12.6updateSelective
 
-### updateSelective
 #### 描述
 
 
@@ -1349,8 +1349,8 @@ public abstract int org.basecode.common.generic.service.GenericService.updateSel
 
 ----
 
+### 2.12.7根据api权限id获取详情
 
-### 根据api权限id获取详情
 #### 描述
 
 
@@ -1408,7 +1408,7 @@ public abstract org.basecode.web.sys.model.ApiPermission org.basecode.web.sys.se
 
 ----
 
-### 111111111222
+### 3.1111111111222
 <p>11111111122222333333edddd</p>
 <pre class="language-css"><code>&lt;style lang="scss" type="text/scss"&gt;
 
@@ -1440,13 +1440,13 @@ public abstract org.basecode.web.sys.model.ApiPermission org.basecode.web.sys.se
 
 ----
 
-### ddd
+### 3.2.1ddd
 <p>aaaddd2222222222223333</p>
 
 
 ----
 
-### 测试接口
+### 4.1测试接口
 <p>我是一些测试的东西</p>
 <pre class="language-java"><code>	/**
 	 * 获取变更行程列表
