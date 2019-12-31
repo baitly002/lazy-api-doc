@@ -31,6 +31,8 @@
 ### &nbsp;&nbsp;&nbsp;&nbsp; test2
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [测试接口](#测试接口)
 
+----
+
 ### 用户功能介绍
 <p>&nbsp;</p>
 <p>safsdaf</p>
@@ -45,6 +47,9 @@
 "data": {
 }
 }</code></pre>
+
+
+----
 
 
 ### 添加地址
@@ -216,6 +221,9 @@ public com.dashu.repair.core.model.Address com.dashu.repair.core.web.AddressCont
 ```
 
 
+----
+
+
 ### 获取地址信息
 #### 描述
 
@@ -315,6 +323,9 @@ public com.dashu.repair.core.model.Address com.dashu.repair.core.web.AddressCont
 ```
 
 
+----
+
+
 ### 修改地址信息
 #### 描述
 
@@ -378,6 +389,9 @@ public boolean com.dashu.repair.core.web.AddressController.update(com.dashu.base
 ```
 
 
+----
+
+
 ### 删除地址
 #### 描述
 
@@ -417,6 +431,9 @@ delete()
 ```json
 public boolean com.dashu.repair.core.web.AddressController.delete(com.dashu.base.common.model.Token,java.lang.String)
 ```
+
+
+----
 
 
 ### excel导出
@@ -473,6 +490,9 @@ exportExcel()
 ```json
 public void com.dashu.repair.core.web.AddressController.exportExcel(com.dashu.base.common.model.Token,java.lang.String,com.dashu.repair.core.model.Address,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
 ```
+
+
+----
 
 
 ### 查询地址列表
@@ -578,6 +598,9 @@ public com.dashu.base.common.model.PageList<com.dashu.repair.core.model.AddressD
 ```
 
 
+----
+
+
 ### excel导入
 #### 描述
 
@@ -675,6 +698,9 @@ importExcel()
 ```json
 public java.util.List<com.dashu.repair.core.model.Address> com.dashu.repair.core.web.AddressController.importExcel(com.dashu.base.common.model.Token,org.springframework.web.multipart.MultipartFile) throws java.lang.Exception
 ```
+
+
+----
 
 
 ### 查询所有子地址列表
@@ -778,6 +804,9 @@ public java.util.List<com.dashu.repair.core.model.Address> com.dashu.repair.core
 ```
 
 
+----
+
+
 ### excel模板下载
 #### 描述
 
@@ -808,6 +837,9 @@ download()
 ```json
 public void com.dashu.repair.core.web.AddressController.download(com.dashu.base.common.model.Token,java.lang.String,java.lang.Long,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
 ```
+
+
+----
 
 
 ### 级联刷新地点详细地址
@@ -849,6 +881,9 @@ public boolean com.dashu.repair.core.web.AddressController.refreshAddress(com.da
 ```
 
 
+----
+
+
 ### 获取监控设备总数
 #### 描述
 
@@ -884,6 +919,9 @@ getCountDevice()
 ```json
 public abstract java.lang.Integer com.wuanhj.web.service.CountService.getCountDevice()
 ```
+
+
+----
 
 
 ### 获取已接入钢厂总数
@@ -923,6 +961,9 @@ public abstract java.lang.Integer com.wuanhj.web.service.CountService.getCountCo
 ```
 
 
+----
+
+
 ### 获取监测数据
 #### 描述
 
@@ -958,6 +999,9 @@ getCountData()
 ```json
 public abstract java.lang.Integer com.wuanhj.web.service.CountService.getCountData()
 ```
+
+
+----
 
 
 ### 获取城市节水节电除尘
@@ -1002,6 +1046,9 @@ public abstract com.wuanhj.web.dto.EconomizeCity com.wuanhj.web.service.CountSer
 ```
 
 
+----
+
+
 ### 删除api权限
 #### 描述
 
@@ -1038,6 +1085,9 @@ delete()
 ```json
 public abstract boolean org.basecode.web.sys.service.ApiPermissionService.delete(java.lang.Long)
 ```
+
+
+----
 
 
 ### 获取api权限列表
@@ -1101,6 +1151,9 @@ public abstract org.basecode.common.criterion.model.PageList<org.basecode.web.sy
 ```
 
 
+----
+
+
 ### 获取api权限树
 #### 描述
 
@@ -1153,6 +1206,9 @@ getTreeData()
 ```json
 public abstract java.util.List<org.basecode.web.sys.dto.ApiPermissionTree> org.basecode.web.sys.service.ApiPermissionService.getTreeData(java.lang.Long)
 ```
+
+
+----
 
 
 ### 保存或修改
@@ -1209,6 +1265,9 @@ public abstract boolean org.basecode.web.sys.service.ApiPermissionService.saveOr
 ```
 
 
+----
+
+
 ### 修改api权限状态
 #### 描述
 
@@ -1248,6 +1307,9 @@ public abstract boolean org.basecode.web.sys.service.ApiPermissionService.update
 ```
 
 
+----
+
+
 ### updateSelective
 #### 描述
 
@@ -1283,6 +1345,9 @@ updateSelective()
 ```json
 public abstract int org.basecode.common.generic.service.GenericService.updateSelective(java.util.Map<java.lang.String, java.lang.Object>)
 ```
+
+
+----
 
 
 ### 根据api权限id获取详情
@@ -1340,6 +1405,9 @@ getApiById()
 public abstract org.basecode.web.sys.model.ApiPermission org.basecode.web.sys.service.ApiPermissionService.getApiById(java.lang.Long)
 ```
 
+
+----
+
 ### 111111111222
 <p>11111111122222333333edddd</p>
 <pre class="language-css"><code>&lt;style lang="scss" type="text/scss"&gt;
@@ -1369,8 +1437,14 @@ public abstract org.basecode.web.sys.model.ApiPermission org.basecode.web.sys.se
 &lt;/style&gt;
 </code></pre>
 
+
+----
+
 ### ddd
 <p>aaaddd2222222222223333</p>
+
+
+----
 
 ### 测试接口
 <p>我是一些测试的东西</p>
@@ -1384,3 +1458,6 @@ public abstract org.basecode.web.sys.model.ApiPermission org.basecode.web.sys.se
 
 		return dao.createNamedQuery("usher.journey.change.list").params(params).list();
 	}</code></pre>
+
+
+----
