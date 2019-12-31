@@ -1,37 +1,37 @@
-> # 系统介绍
->> ## [用户功能介绍](#用户功能介绍)
-> # 地址
->> ## [添加地址](#添加地址)
->> ## [获取地址信息](#获取地址信息)
->> ## [修改地址信息](#修改地址信息)
->> ## [删除地址](#删除地址)
->> ## [excel导出](#excel导出)
->> ## [查询地址列表](#查询地址列表)
->> ## [excel导入](#excel导入)
->> ## [查询所有子地址列表](#查询所有子地址列表)
->> ## [excel模板下载](#excel模板下载)
->> ## [级联刷新地点详细地址](#级联刷新地点详细地址)
->> ## 统计数相关
->>> ### [获取监控设备总数](#获取监控设备总数)
->>> ### [获取已接入钢厂总数](#获取已接入钢厂总数)
->>> ### [获取监测数据](#获取监测数据)
->>> ### [获取城市节水节电除尘](#获取城市节水节电除尘)
->> ## api权限管理
->>> ### [删除api权限](#删除api权限)
->>> ### [获取api权限列表](#获取api权限列表)
->>> ### [获取api权限树](#获取api权限树)
->>> ### [保存或修改](#保存或修改)
->>> ### [修改api权限状态](#修改api权限状态)
->>> ### [updateSelective](#updateSelective)
->>> ### [根据api权限id获取详情](#根据api权限id获取详情)
-> # test1
->> ## [111111111222](#111111111222)
->> ## aaa
->>> ### [ddd](#ddd)
-> # test2
->> ## [测试接口](#测试接口)
+# &nbsp;&nbsp;&nbsp;&nbsp; 系统介绍
+## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [用户功能介绍](#用户功能介绍)
+# &nbsp;&nbsp;&nbsp;&nbsp; 地址
+## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [添加地址](#添加地址)
+## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [获取地址信息](#获取地址信息)
+## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [修改地址信息](#修改地址信息)
+## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [删除地址](#删除地址)
+## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [excel导出](#excel导出)
+## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [查询地址列表](#查询地址列表)
+## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [excel导入](#excel导入)
+## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [查询所有子地址列表](#查询所有子地址列表)
+## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [excel模板下载](#excel模板下载)
+## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [级联刷新地点详细地址](#级联刷新地点详细地址)
+## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 统计数相关
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [获取监控设备总数](#获取监控设备总数)
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [获取已接入钢厂总数](#获取已接入钢厂总数)
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [获取监测数据](#获取监测数据)
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [获取城市节水节电除尘](#获取城市节水节电除尘)
+## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; api权限管理
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [删除api权限](#删除api权限)
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [获取api权限列表](#获取api权限列表)
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [获取api权限树](#获取api权限树)
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [保存或修改](#保存或修改)
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [修改api权限状态](#修改api权限状态)
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [updateSelective](#updateSelective)
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [根据api权限id获取详情](#根据api权限id获取详情)
+# &nbsp;&nbsp;&nbsp;&nbsp; test1
+## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [111111111222](#111111111222)
+## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; aaa
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [ddd](#ddd)
+# &nbsp;&nbsp;&nbsp;&nbsp; test2
+## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [测试接口](#测试接口)
 
-###用户功能介绍
+### 用户功能介绍
 <p>&nbsp;</p>
 <p>safsdaf</p>
 <p>sadf</p>
@@ -47,7 +47,7 @@
 }</code></pre>
 
 
-###添加地址
+### 添加地址
 #### 描述
 
 
@@ -216,7 +216,7 @@ public com.dashu.repair.core.model.Address com.dashu.repair.core.web.AddressCont
 ```
 
 
-###获取地址信息
+### 获取地址信息
 #### 描述
 
 
@@ -315,7 +315,7 @@ public com.dashu.repair.core.model.Address com.dashu.repair.core.web.AddressCont
 ```
 
 
-###修改地址信息
+### 修改地址信息
 #### 描述
 
 
@@ -378,7 +378,7 @@ public boolean com.dashu.repair.core.web.AddressController.update(com.dashu.base
 ```
 
 
-###删除地址
+### 删除地址
 #### 描述
 
 
@@ -419,7 +419,7 @@ public boolean com.dashu.repair.core.web.AddressController.delete(com.dashu.base
 ```
 
 
-###excel导出
+### excel导出
 #### 描述
 
 
@@ -475,7 +475,7 @@ public void com.dashu.repair.core.web.AddressController.exportExcel(com.dashu.ba
 ```
 
 
-###查询地址列表
+### 查询地址列表
 #### 描述
 
 
@@ -578,7 +578,7 @@ public com.dashu.base.common.model.PageList<com.dashu.repair.core.model.AddressD
 ```
 
 
-###excel导入
+### excel导入
 #### 描述
 
 
@@ -677,7 +677,7 @@ public java.util.List<com.dashu.repair.core.model.Address> com.dashu.repair.core
 ```
 
 
-###查询所有子地址列表
+### 查询所有子地址列表
 #### 描述
 
 
@@ -778,7 +778,7 @@ public java.util.List<com.dashu.repair.core.model.Address> com.dashu.repair.core
 ```
 
 
-###excel模板下载
+### excel模板下载
 #### 描述
 
 
@@ -810,7 +810,7 @@ public void com.dashu.repair.core.web.AddressController.download(com.dashu.base.
 ```
 
 
-###级联刷新地点详细地址
+### 级联刷新地点详细地址
 #### 描述
 
 
@@ -849,7 +849,7 @@ public boolean com.dashu.repair.core.web.AddressController.refreshAddress(com.da
 ```
 
 
-###获取监控设备总数
+### 获取监控设备总数
 #### 描述
 
 
@@ -886,7 +886,7 @@ public abstract java.lang.Integer com.wuanhj.web.service.CountService.getCountDe
 ```
 
 
-###获取已接入钢厂总数
+### 获取已接入钢厂总数
 #### 描述
 
 
@@ -923,7 +923,7 @@ public abstract java.lang.Integer com.wuanhj.web.service.CountService.getCountCo
 ```
 
 
-###获取监测数据
+### 获取监测数据
 #### 描述
 
 
@@ -960,7 +960,7 @@ public abstract java.lang.Integer com.wuanhj.web.service.CountService.getCountDa
 ```
 
 
-###获取城市节水节电除尘
+### 获取城市节水节电除尘
 #### 描述
 
 
@@ -1002,7 +1002,7 @@ public abstract com.wuanhj.web.dto.EconomizeCity com.wuanhj.web.service.CountSer
 ```
 
 
-###删除api权限
+### 删除api权限
 #### 描述
 
 
@@ -1040,7 +1040,7 @@ public abstract boolean org.basecode.web.sys.service.ApiPermissionService.delete
 ```
 
 
-###获取api权限列表
+### 获取api权限列表
 #### 描述
 
 
@@ -1101,7 +1101,7 @@ public abstract org.basecode.common.criterion.model.PageList<org.basecode.web.sy
 ```
 
 
-###获取api权限树
+### 获取api权限树
 #### 描述
 
 
@@ -1155,7 +1155,7 @@ public abstract java.util.List<org.basecode.web.sys.dto.ApiPermissionTree> org.b
 ```
 
 
-###保存或修改
+### 保存或修改
 #### 描述
 
 
@@ -1209,7 +1209,7 @@ public abstract boolean org.basecode.web.sys.service.ApiPermissionService.saveOr
 ```
 
 
-###修改api权限状态
+### 修改api权限状态
 #### 描述
 
 
@@ -1248,7 +1248,7 @@ public abstract boolean org.basecode.web.sys.service.ApiPermissionService.update
 ```
 
 
-###updateSelective
+### updateSelective
 #### 描述
 
 
@@ -1285,7 +1285,7 @@ public abstract int org.basecode.common.generic.service.GenericService.updateSel
 ```
 
 
-###根据api权限id获取详情
+### 根据api权限id获取详情
 #### 描述
 
 
@@ -1340,7 +1340,7 @@ getApiById()
 public abstract org.basecode.web.sys.model.ApiPermission org.basecode.web.sys.service.ApiPermissionService.getApiById(java.lang.Long)
 ```
 
-###111111111222
+### 111111111222
 <p>11111111122222333333edddd</p>
 <pre class="language-css"><code>&lt;style lang="scss" type="text/scss"&gt;
 
@@ -1369,10 +1369,10 @@ public abstract org.basecode.web.sys.model.ApiPermission org.basecode.web.sys.se
 &lt;/style&gt;
 </code></pre>
 
-###ddd
+### ddd
 <p>aaaddd2222222222223333</p>
 
-###测试接口
+### 测试接口
 <p>我是一些测试的东西</p>
 <pre class="language-java"><code>	/**
 	 * 获取变更行程列表
