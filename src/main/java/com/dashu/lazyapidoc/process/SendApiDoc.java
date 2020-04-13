@@ -62,7 +62,7 @@ public class SendApiDoc {
                     gmap.put(methodDoc.getReturnType()+"["+ind, arg);
                 }
             }
-            String methodFinalResult = BeanParser.parseRespone(methodDoc.getRawType(), methodDoc.getReturnType(), methodDoc.getReturnArgs(), methodDoc.getReturnDoc(), gmap);
+            String methodFinalResult = BeanParser.parseRespone(methodDoc.getReturnFilter(), methodDoc.getRawType(), methodDoc.getReturnType(), methodDoc.getReturnArgs(), methodDoc.getReturnDoc(), gmap);
 //            logger.info("方法最终返回结果数据格式:"+methodFinalResult.toJSONString());
 //            String respones = BeanParser.respone(methodFinalResult).toJSONString();
 //            String respones = methodFinalResult.toJSONString();

@@ -6,6 +6,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.annotation.JSONField;
 import com.dashu.lazyapidoc.annotation.Doc;
 import com.dashu.lazyapidoc.annotation.ParameterInfo;
+import com.dashu.lazyapidoc.annotation.ReturnFilter;
 import com.dashu.lazyapidoc.util.ParameterizedTypeImpl;
 import com.dashu.lazyapidoc.util.StringUtils;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -364,11 +365,11 @@ public class BeanParser {
 
     }
 
-    public static String parseRespone(Type rawType, String returnType, String returnArgs, String returnDoc, HashMap<String, String> genericMap) {
+    public static String parseRespone(ReturnFilter returnFilter, Type rawType, String returnType, String returnArgs, String returnDoc, HashMap<String, String> genericMap) {
         String dataRemark = "";
         String rawTypeName = rawType.getTypeName();
         JSON result = null;
-        if(StringUtils.isNotBlank(ApiConfig.rootClass)){
+        if(StringUtils.isNotBlank(ApiConfig.rootClass) && (returnFilter == null || !returnFilter.ignoreCriterion())){
             try {
                 Class<?> rootClazz = Class.forName(ApiConfig.rootClass);
 //                ParameterizedType parameterizedType = new ParameterizedTypeImpl(rootClazz, new Type[]{rawType}, null);

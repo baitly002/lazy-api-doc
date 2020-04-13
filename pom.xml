@@ -6,7 +6,7 @@
 
     <groupId>com.dashu</groupId>
     <artifactId>lazy-api-doc</artifactId>
-    <version>1.1.4</version>
+    <version>1.1.6</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -172,7 +172,7 @@
         <repository>
             <id>nexus</id>
             <name>local private nexus</name>
-            <url>http://maven.aliyun.com/content/groups/public/</url> <!-- //只需一个即可，根据需要去掉某个 -->
+            <url>https://maven.aliyun.com/repository/public</url> <!-- //只需一个即可，根据需要去掉某个 -->
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -185,7 +185,7 @@
         <pluginRepository>
             <id>nexus</id>
             <name>local private nexus</name>
-            <url>http://maven.aliyun.com/content/groups/public/</url> <!-- //只需一个即可，根据需要去掉某个 -->
+            <url>https://maven.aliyun.com/repository/public</url> <!-- //只需一个即可，根据需要去掉某个 -->
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -199,12 +199,12 @@
 		<repository>
 			<id>nexus-bingo</id>
 			<name>releases</name>
-			<url>http://10.201.77.90:8081/repository/maven-releases</url>
+			<url>http://kb.projects.bingosoft.net:8090/repository/maven-releases</url>
 		</repository>
 		<snapshotRepository>
 			<id>nexus-bingo</id>
 			<name>snapshots</name>
-			<url>http://10.201.77.90:8081/repository/maven-snapshots</url>
+			<url>http://kb.projects.bingosoft.net:8090/repository/maven-snapshots</url>
 		</snapshotRepository>
 		<!--
         <snapshotRepository>

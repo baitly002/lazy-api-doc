@@ -53,4 +53,6 @@ public @interface ReturnFilter {
      * @return
      */
     String prefix() default "";
+
+    boolean ignoreCriterion() default false;
 }
