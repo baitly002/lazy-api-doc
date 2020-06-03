@@ -6,7 +6,7 @@
 
     <groupId>com.dashu</groupId>
     <artifactId>lazy-api-doc</artifactId>
-    <version>1.1.6</version>
+    <version>1.1.8</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -18,7 +18,6 @@
         <project.src>src/main/java</project.src>
         <!-- 编译时的编码 -->
         <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
-        <JAVAC_PATH>${env.JAVA_HOME}/bin/javac</JAVAC_PATH>
         <JAVA_VERSION>1.8</JAVA_VERSION>
         <ENCODING>UTF-8</ENCODING>
         <COMPILE_PLUGIN_VERSION>3.6.1</COMPILE_PLUGIN_VERSION>
@@ -222,34 +221,6 @@
     </distributionManagement>
 
     <profiles>
-        <profile>
-            <id>doc</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>exec-maven-plugin</artifactId>
-                        <version>1.6.0</version>
-                        <executions>
-                            <execution>
-                                <phase>install</phase>
-                                <goals>
-                                    <goal>java</goal>
-                                </goals>
-                                <configuration>
-                                    <mainClass>com.dashu.lazyapidoc.process.CreateApi</mainClass>
-                                    <cleanupDaemonThreads>false</cleanupDaemonThreads>
-                                    <arguments>
-                                        <argument>yyyyyyy</argument>
-                                        <argument>kkkkkkkkkkkkkk</argument>
-                                    </arguments>
-                                </configuration>
 
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
     </profiles>
 </project>

@@ -7,7 +7,7 @@ import java.lang.annotation.*;
  * 过滤返回的字段<br/>
  * 可排除某些字段，也可只包含某些字段
  */
-@Target({ElementType.METHOD})
+@Target({ElementType.METHOD, ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 public @interface ReturnFilter {
